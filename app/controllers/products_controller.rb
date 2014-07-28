@@ -22,4 +22,9 @@ class ProductsController < ApplicationController
     end
   end
 
+
+def new
+  @product = Product.new(:name => 'power rangers', :price => '1000')
+end
+
 end
